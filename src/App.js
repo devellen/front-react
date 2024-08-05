@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-
+// import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import CadastroUsuario from "./pages/CadastrarUsuario";
+import Home from "./pages/Home"
+import CadastroContato from "./pages/CadastroContato"
+import AlterarContato from "./pages/AlterarCadastro"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Login />} />
+        <Route path="cadastroUsuario" element={<CadastroUsuario />} />
+        <Route path="home" element={<Home />} />
+        <Route path="cadastroContato" element={<CadastroContato />} />
+        <Route path="alterarContato/:id" element={<AlterarContato />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

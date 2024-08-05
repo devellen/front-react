@@ -1,0 +1,87 @@
+.logo {
+    width: 90.2%;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.row-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    width: 60vh;
+    height: 65vh;
+    padding: 30px;
+}
+
+.button1 {
+    background-color: blue;
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.button2 {
+    background-color: red;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.input {
+    margin-bottom: 10px;
+    border: 1px solid gray;
+}
+
+/*css home*/
+.head-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6e6eb;
+
+}
+
+.head-list:hover {
+    background-color: #e6e6eb;
+}
+
+.b-list {
+    color: black;
+}
+
+.b-list:hover {
+    background-color: transparent;
+    border: none;
+}
+
+.list {
+ width: 80%;
+}
+
+.div-usuario {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.div-usuario2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nome {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.numero {
+    margin-left: 47px;
+    margin-top: -15px;
+}
